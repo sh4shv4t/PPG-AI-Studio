@@ -1,0 +1,9 @@
+langchain_openai
+langgraph
+fastapi
+uvicorn
+langchain
+langchain-openai
+pydantic
+typing-extensions
+requests
