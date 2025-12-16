@@ -178,8 +178,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📧 Contact
 
-Your Name - [@yourtwitter](https://x.com/shashvatsingh05)
+Your Name - [@shashvatsingh05](https://x.com/shashvatsingh05)
 
-Project Link: [https://github.com/yourusername/PPG-AI-Studio](https://github.com/sh4shv4t/PPG-AI-Studio)
+Project Link: [https://github.com/sh4shv4t/PPG-AI-Studio](https://github.com/sh4shv4t/PPG-AI-Studio)
 
 ---
