@@ -1,9 +1,9 @@
 from langchain_core.prompts import ChatPromptTemplate
 from pydantic import BaseModel, Field
 from typing import List
-from app.graph.state import ImageGenState
-from app.services.llm import get_llm
-from app.services.flux import generate_flux_image
+from graph.state import ImageGenState
+from services.llm import get_llm
+from services.flux import generate_flux_image
 
 
 llm = get_llm()
@@ -55,18 +55,11 @@ async def refine_prompt_node(state: ImageGenState):
 
 
 async def generate_image_node(state: ImageGenState):
-    image_path = generate_flux_image(
-        prompt=state["refined_prompt"],
-        steps=4,
-        cfg_scale=3.5,
-        seed=None,
-    )
+    image_path = await generate_flux_image(state["refined_prompt"])
 
     return {
         "image_path": image_path,
-        "iteration": state["iteration"] + 1,
-        "past_steps": [("Image Generated", image_path)],
-        "state_log": [f"Generated image at {image_path}"],
+        "state_log": [f"Generated image at: {image_path}"],
     }
 
 

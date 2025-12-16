@@ -7,3 +7,6 @@ langchain-openai
 pydantic
 typing-extensions
 requests
+langchain-google-genai
+google-generativeai
+dotenv

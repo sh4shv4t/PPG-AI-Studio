@@ -1,7 +1,7 @@
 from langgraph.graph import StateGraph, START, END
 from langgraph.checkpoint.memory import MemorySaver
-from app.graph.state import ImageGenState
-from app.graph.nodes import (
+from graph.state import ImageGenState
+from graph.nodes import (
     plan_node,
     refine_prompt_node,
     generate_image_node,

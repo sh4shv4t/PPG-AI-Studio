@@ -1,13 +1,15 @@
+from langchain_google_genai import ChatGoogleGenerativeAI
 import os
-from langchain_openai import ChatOpenAI
+
+from dotenv import load_dotenv
+load_dotenv()
+
+llm = ChatGoogleGenerativeAI(
+    model="gemini-1.5-pro",
+    temperature=0,
+    google_api_key=os.getenv("GEMINI_API_KEY")
+)
+
 
 def get_llm():
-    """
-    Centralized LLM factory.
-    Keeps configuration minimal and deployment-safe.
-    """
-    return ChatOpenAI(
-        model=os.getenv("OPENAI_MODEL", "gpt-4o-mini"),
-        temperature=0,
-        api_key=os.getenv("OPENAI_API_KEY"),
-    )
+    return llm
