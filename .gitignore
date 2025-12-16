@@ -1,6 +1,50 @@
+# Node.js
+node_modules/
+.next/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+venv/
+
+# Environment Variables
+.env
+
+# Logs
+*.log
+*.txt
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# IDE Files
+.vscode/
+.idea/
+*.iml
+
+# Build Files
+dist/
+build/
+*.egg-info/
+
+# Coverage
+.coverage
+coverage.xml
+htmlcov/
+
+# Miscellaneous
+*.swp
+*.swo
+*.swn
+*.bak
+*.tmp
+*.orig
+
 ../venv
-
 *.env*
-
 *generated/
-
+*__pycache__/
