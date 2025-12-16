@@ -57,7 +57,7 @@ PPG-AI-Studio/
 
 #### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/PPG-AI-Studio.git
+git clone https://github.com/sh4shv4t/PPG-AI-Studio.git
 cd PPG-AI-Studio
 ```
 
